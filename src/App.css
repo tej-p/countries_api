@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+body{
+  margin: 0%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
+  height: 60px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 0% 3% 1.5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nav >button{
+  padding: 10px;
+  height: 50%;
+  margin-top: 2%;
+  border: none;
+  background-color: rgb(61, 60, 60);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main{
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-gap: 30px;
+  background-color: aliceblue;
+  padding: 50px;
+  /* border: 2px solid red; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.country{
+  width: 300px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-decoration: none;
+  color: black;
+  /* border: 2px solid green; */
+  
+}
+.country >div{
+  padding: 0px 30px;
+  /* border: 2px solid yellow; */
+}
+
+.country >img{
+  width: 100%;
+  height: 50%;
+  /* border: 2px solid blue; */
+}
+
+.middle{
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 3% 0%;
+  background-color: aliceblue;
+
+}
+
+.search >input {
+  padding: 10px 30px;
+}
+
+.search >button{
+  margin-left: 10px;
+  padding: 10px 30px;
+  background-color: rgb(68, 67, 67);
+  color: white;
+  font-weight: bold;
+  border: navajowhite;
+}
+
+
+.detail >button{
+    margin: 20px 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    padding: 10px 50px;
+    font-weight: bold;
+}
+
+.country-detail{
+  display: flex;
+  
+}
+
+.country-detail{
+  /* border: 2px solid red; */
+  padding: 0px 50px;
+}
+
+
+
+.img > img{
+  height: 300px;
+  padding: 30px 50px;
 }
